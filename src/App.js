@@ -1,24 +1,12 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import { Viewer , ImageryLayer } from 'resium';
-import { WebMapServiceImageryProvider } from "cesium";
+import HomePage from './Pages/HomePage';
 
 
 
 function App() {
   return (
-    <Viewer full>
-    <ImageryLayer
-      imageryProvider={
-        new WebMapServiceImageryProvider({
-          url: "//services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
-          layers: '1',
-         
-        })
-      }
-    />
-    
-  </Viewer>
+    <HomePage></HomePage>
   );
 }
 
